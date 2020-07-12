@@ -1,3 +1,4 @@
+// https://hyperskill.org/learn/daily/4347?history=true
 import java.util.Arrays;
 import java.util.Scanner;
 
