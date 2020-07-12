@@ -1,3 +1,3 @@
-![Problem statement](Pattern%20and%20Matcher%20-%20Find%20a%20word%20with%20a%20given%20length/2020-07-12.png)
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 [Link to problem](https://hyperskill.org/learn/daily/4347?history=true)
