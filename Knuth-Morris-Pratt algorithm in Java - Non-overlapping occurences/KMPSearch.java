@@ -34,8 +34,12 @@ public class KMPSearch {
         String text = scanner.nextLine();
         ArrayList<Integer> occurences = new ArrayList<>();
         
+        // Calculate prefix function
         int[] prefixFunc = calculatePrefixFunc(pattern + "#" + text);
+        
+        // Traverse through prefix function
         for (int i = pattern.length() + 1; i < prefixFunc.length; i++) {
+            // Record index of pattern occurence in text
             if (prefixFunc[i] == pattern.length()) {
                 occurences.add(i - 2 * pattern.length());
             }
