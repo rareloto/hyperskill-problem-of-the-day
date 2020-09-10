@@ -32,20 +32,21 @@ public class KMPSearch {
         
         String pattern = scanner.nextLine();
         String text = scanner.nextLine();
-        ArrayList<Integer> occurences = new ArrayList<>();
+        ArrayList<Integer> occurrences = new ArrayList<>();
         
         // Calculate prefix function
         int[] prefixFunc = calculatePrefixFunc(pattern + "#" + text);
         
         // Traverse through prefix function
         for (int i = pattern.length() + 1; i < prefixFunc.length; i++) {
-            // Record index of pattern occurence in text
+            // Record index of pattern occurrence in text
             if (prefixFunc[i] == pattern.length()) {
-                occurences.add(i - 2 * pattern.length());
+                occurrences.add(i - 2 * pattern.length());
             }
         }
         
-        System.out.println(occurences.size());
-        occurences.forEach(m -> System.out.print(m + " "));   
+        // Print occurrences
+        System.out.println(occurrences.size());
+        occurrences.forEach(m -> System.out.print(m + " "));   
     }
 }
